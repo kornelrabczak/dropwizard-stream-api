@@ -1,0 +1,20 @@
+zooKeeperHost: localhost:2181
+brokerList: localhost:9092
+topic: test
+groupId: groupId
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+  appenders:
+    - type: console
